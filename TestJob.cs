@@ -25,7 +25,7 @@ namespace Shift.Demo.Jobs
                 if (progress != null)
                     progress.Report(pInfo);
 
-                Thread.Sleep(2500);
+                Thread.Sleep(3000);
             }
 
             return;
