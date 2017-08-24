@@ -30,8 +30,8 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Shift.Entities, Version=1.0.8.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>packages\Shift.Entities.1.0.8.0\lib\net461\Shift.Entities.dll</HintPath>
+    <Reference Include="Shift.Entities, Version=1.0.8.1, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\Shift.Entities.1.0.8.2\lib\net461\Shift.Entities.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="System" />

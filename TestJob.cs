@@ -10,7 +10,7 @@ namespace Shift.Demo.Jobs
 {
     public class TestJob
     {
-        public void Start(string value, IProgress<ProgressInfo> progress, CancellationToken token)
+        public void Start(string value, IProgress<ProgressInfo> progress, CancellationToken token, PauseToken pauseToken)
         {
             var total = 10;
 
@@ -21,6 +21,8 @@ namespace Shift.Demo.Jobs
                 {
                     token.ThrowIfCancellationRequested(); //throw OperationCanceledException
                 }
+
+                pauseToken.WaitWhilePausedAsync().GetAwaiter().GetResult();
 
                 note += i + " - " + value + "<br/> \n";
 
